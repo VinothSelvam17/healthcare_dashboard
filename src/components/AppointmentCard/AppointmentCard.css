@@ -1,0 +1,56 @@
+.appointment-wrappers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.appointment-cards {
+  padding: 16px 20px;
+  border-radius: 20px;
+  width: 250px;
+  margin: 10px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.appointment-cards:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+  .appointment-cards {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.time {
+  font-size: 14px;
+  margin: 4px 0 2px 0;
+}
+
+.doctor {
+  font-size: 13px;
+  opacity: 0.9;
+  margin: 4px 0 2px 0;
+}

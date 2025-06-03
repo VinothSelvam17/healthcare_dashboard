@@ -1,0 +1,118 @@
+.calendar-container {
+  max-width: 1000px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #121330;
+}
+
+.calendar-header button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.calendar-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.calendar-column {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.calendar-column:nth-child(3) {
+  background-color: #f0e6ff;
+}
+
+.day {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2f365f;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f365f;
+  margin-bottom: 12px;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.time-slot {
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  color: #2f365f;
+  font-size: 16px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.time-slot.selected {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: 600;
+}
+
+.arrow-change {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-header h2 {
+    font-size: 20px;
+  }
+
+  .calendar-header button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .calendar-column {
+    padding: 8px;
+  }
+
+  .time-slot {
+    font-size: 14px;
+  }
+}

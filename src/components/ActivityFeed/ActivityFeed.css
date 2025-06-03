@@ -1,0 +1,69 @@
+.activity-container {
+  background: #f8f9fb;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 650px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #121330;
+  margin-bottom: 16px;
+}
+
+.activity-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.bar {
+  width: 4px;
+  height: 40px;
+  background-color: #10b981;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.bar:hover {
+  transform: scaleY(1.2);
+}
+
+.day-label {
+  font-size: 12px;
+  color: #777;
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .bar {
+    width: 6px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .activity-chart {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+  }
+
+  .day-column {
+    width: 40px;
+  }
+}
